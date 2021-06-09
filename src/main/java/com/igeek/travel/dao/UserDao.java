@@ -1,7 +1,7 @@
 package com.igeek.travel.dao;
 
 import com.igeek.common.utils.DataSourceUtils;
-import com.igeek.shop.entity.User;
+import com.igeek.travel.entity.User;
 
 import java.sql.SQLException;
 import java.util.List;
