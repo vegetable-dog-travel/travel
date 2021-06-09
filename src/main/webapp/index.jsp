@@ -220,7 +220,7 @@
 					<img src="img/shanghai.png" width="310px" height="200px"/>
 					<a>
 						<p>&nbsp;&nbsp;
-							上海15日14晚跟团游〖菜狗专享 · 悠悠小钱〗
+							上海15日14晚跟团游〖菜狗专享 · 悠悠小屠〗
 						</p>
 					</a>
 				</div>
@@ -228,7 +228,7 @@
 					<img src="img/xian.png" width="310px" height="200px"/>
 					<a>
 						<p>&nbsp;&nbsp;
-							西安15日14晚跟团游〖菜狗专享 · 悠悠小钱〗
+							西安15日14晚跟团游〖菜狗专享 · 悠悠小董〗
 						</p>
 					</a>
 				</div>
