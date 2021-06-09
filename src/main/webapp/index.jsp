@@ -35,108 +35,9 @@
         若是小屏幕（pad）：sm 6/hidden/4
         若是超小屏幕（pad）：xs 12/hidden/12
 -->
-<div class="container">
-	<div class="row" >
-		<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-			<a href="#"><img src="img/logo.png"/></a>
-		</div>
-		<div class="col-lg-4 col-md-4 hidden-sm hidden-sm">
-			<img src="img/header.png" >
-		</div>
-		<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" style="margin-top: 20px;padding-left: 20px;padding-right: 20px; font-size: 20px;" >
-			<a href="#">注册</a>&nbsp;&nbsp;
-			<a href="#">登录</a>&nbsp;&nbsp;
-			<a href="#">我的收藏</a>&nbsp;&nbsp;
-			<a href="#">我的订单</a>&nbsp;&nbsp;
-		</div>
-	</div>
-</div>
 
-<!-- 导航栏 -->
-<div class="container">
-	<div class="row">
-		<nav class="navbar navbar-inverse">
-			<div class="container-fluid">
-				<!-- Brand and toggle get grouped for better mobile display 适应移动端-->
-				<div class="navbar-header">
-					<!-- 屏幕缩小后，出现导航按钮 -->
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" href="#">首页</a>
-				</div>
-
-				<!-- 菜单栏 -->
-				<!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-					<ul class="nav navbar-nav">
-						<ul class="nav navbar-nav">
-							<li class="active">
-								<a href="#">国内游<span class="sr-only">(current)</span></a>
-							</li>
-							<li><a href="#">国际游</a></li>
-							<li><a href="#">自驾游</a></li>
-							<li><a href="#">跟团游</a></li>
-						</ul>
-
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">酒店住宿<span class="caret"></span></a>
-							<ul class="dropdown-menu">
-								<li><a href="#"></a></li>
-								<li><a href="#">国内酒店</a></li>
-								<li><a href="#">海外酒店</a></li>
-								<li><a href="#">复古民宿</a></li>
-								<li role="separator" class="divider"></li>
-								<li><a href="#">城堡皇宫</a></li>
-								<li role="separator" class="divider"></li>
-								<li><a href="#">我就想睡街上</a></li>
-							</ul>
-						</li>
-
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">机票预定<span class="caret"></span></a>
-							<ul class="dropdown-menu">
-								<li><a href="#">国内机票</a></li>
-								<li><a href="#">国际机票</a></li>
-								<li><a href="#">特价机票</a></li>
-								<li role="separator" class="divider"></li>
-								<li><a href="#">退订改签</a></li>
-								<li role="separator" class="divider"></li>
-								<li><a href="#">我自己会飞</a></li>
-							</ul>
-						</li>
-
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">旅游导航<span class="caret"></span></a>
-							<ul class="dropdown-menu">
-								<li><a href="#">国内行</a></li>
-								<li><a href="#">海外行</a></li>
-								<li><a href="#">周边游</a></li>
-								<li role="separator" class="divider"></li>
-								<li><a href="#">地下游</a></li>
-								<li role="separator" class="divider"></li>
-								<li><a href="#">我自己会玩</a></li>
-							</ul>
-						</li>
-
-
-					</ul>
-
-					<!-- 表单 -->
-					<form class="navbar-form navbar-right">
-						<div class="form-group">
-							<input type="text" class="form-control" placeholder="去哪里玩呢...">
-						</div>
-						<button type="submit" class="btn btn-default">搜一下吧</button>
-					</form>
-				</div><!-- /.navbar-collapse -->
-			</div><!-- /.container-fluid -->
-		</nav>
-	</div>
-</div>
+<%--引入header.jsp--%>
+<jsp:include page="/header.jsp"></jsp:include>
 
 <!-- 轮播图 -->
 <div class="container">
@@ -352,44 +253,8 @@
 	</div>
 </div>
 
-<!-- 服务 -->
-<div class="container">
-	<div class="row">
-		<div class="col-md-11" style="margin-top: 10px;margin-bottom: 5px; margin-left: -20px">
-			<img src="img/footer.jpg" width="110%" >
-		</div>
-		<!-- 图片部分 -->
-		<div class="col-md-1 hidden-sm hidden-xs" style="padding-left: 15px;">
-			<a href="#" >
-				<img src="img/火箭.png" width="80%" style="margin-left: 80px;padding-top: 15px;"/>
-			</a>
-			<!-- <span style="font-size: 16px; padding-left: 80px;">冲</span> -->
-		</div>
-	</div>
-</div>
-
-<!-- foot -->
-<div class="container">
-	<div class="row" style="text-align: center;">
-		<div class="list-inline">
-			<p>
-				<a href="#">关于我们</a>
-				<a href="#">联系我们</a>
-				<a href="#">招贤纳士</a>
-				<a href="#">法律声明</a>
-				<a href="#">友情链接</a>
-				<a href="#">支付方式</a>
-				<a href="#">配送方式</a>
-				<a href="#">服务声明</a>
-				<a href="#">广告招租</a>
-			</p>
-			<p>
-				Copyrignt @ 1900-9900 菜狗旅行 说行就是行
-			</p>
-		</div>
-	</div>
-</div>
-
+<%--引入footer.jsp--%>
+<jsp:include page="/footer.jsp"></jsp:include>
 </body>
 
 <!-- 先引入jQuery核心js文件 -->

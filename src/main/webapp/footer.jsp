@@ -1,25 +1,41 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<div class="container-fluid">
-	<div style="margin-top:50px;">
-		<img src="img/footer.jpg" width="100%" height="78" alt="我们的优势" title="我们的优势" />
-	</div>
 
-	<div style="text-align: center;margin-top: 5px;">
-		<ul class="list-inline">
-			<li><a href="info.jsp">关于我们</a></li>
-			<li><a>联系我们</a></li>
-			<li><a>招贤纳士</a></li>
-			<li><a>法律声明</a></li>
-			<li><a>友情链接</a></li>
-			<li><a>支付方式</a></li>
-			<li><a>配送方式</a></li>
-			<li><a>服务声明</a></li>
-			<li><a>广告声明</a></li>
-		</ul>
+<!-- 服务 -->
+<div class="container">
+	<div class="row">
+		<div class="col-md-11" style="margin-top: 10px;margin-bottom: 5px; margin-left: -20px">
+			<img src="img/footer.jpg" width="110%" >
+		</div>
+		<!-- 图片部分 -->
+		<div class="col-md-1 hidden-sm hidden-xs" style="padding-left: 15px;">
+			<a href="#" >
+				<img src="img/火箭.png" width="80%" style="margin-left: 80px;padding-top: 15px;"/>
+			</a>
+			<!-- <span style="font-size: 16px; padding-left: 80px;">冲</span> -->
+		</div>
 	</div>
-	<div style="text-align: center;margin-top: 5px;margin-bottom:20px;">
-		Copyright &copy; 2005-2016 极客商城 版权所有
+</div>
+
+<!-- foot -->
+<div class="container">
+	<div class="row" style="text-align: center;">
+		<div class="list-inline">
+			<p>
+				<a href="#">关于我们</a>
+				<a href="#">联系我们</a>
+				<a href="#">招贤纳士</a>
+				<a href="#">法律声明</a>
+				<a href="#">友情链接</a>
+				<a href="#">支付方式</a>
+				<a href="#">配送方式</a>
+				<a href="#">服务声明</a>
+				<a href="#">广告招租</a>
+			</p>
+			<p>
+				Copyrignt @ 1900-9900 菜狗旅行 说行就是行
+			</p>
+		</div>
 	</div>
 </div>

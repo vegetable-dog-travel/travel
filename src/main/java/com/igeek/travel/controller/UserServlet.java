@@ -89,7 +89,7 @@ public class UserServlet extends BasicServlet {
             //注册成功
 
             //通过邮箱，给注册者发送一份邮件，邮件中包含激活码
-            String emailMsg = "<a href='http://192.168.22.11:8899/user?method=active&code="+code+"'>请点击此码"+code+"激活账户</a>";
+            String emailMsg = "<a href='http://192.168.22.22:8080/user?method=active&code="+code+"'>请点击此码"+code+"激活账户</a>";
             MailUtils.sendMail(user.getEmail(),"激活账户",emailMsg);
 
             request.getRequestDispatcher("registSuccess.jsp").forward(request,response);
@@ -105,7 +105,7 @@ public class UserServlet extends BasicServlet {
         String code = request.getParameter("code");
         boolean flag = userService.active(code);
         if(flag){
-            response.sendRedirect("index.jsp");
+            response.sendRedirect("login.jsp");
         }else{
             response.sendRedirect("error.jsp");
         }

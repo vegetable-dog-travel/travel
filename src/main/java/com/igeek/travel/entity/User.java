@@ -1,5 +1,7 @@
 package com.igeek.travel.entity;
 
+import javax.swing.text.StringContent;
+import java.nio.charset.CoderMalfunctionError;
 import java.util.Date;
 
 /**
@@ -20,6 +22,19 @@ public class User {
 	private String address;
 
 	public User() {
+	}
+
+	public User(String uid, String username, String password, String name, String email, String telephone, Date birthday, String sex, int state, String code) {
+		this.uid = uid;
+		this.username = username;
+		this.password = password;
+		this.name = name;
+		this.email = email;
+		this.telephone = telephone;
+		this.birthday = birthday;
+		this.sex = sex;
+		this.state = state;
+		this.code = code;
 	}
 
 	public User(String uid, String username, String password, String name, String email, String telephone, Date birthday, String sex, int state, String code, String address) {
