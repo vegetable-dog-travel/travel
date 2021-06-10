@@ -105,7 +105,7 @@ public class UserServlet extends BasicServlet {
         String code = request.getParameter("code");
         boolean flag = userService.active(code);
         if(flag){
-            response.sendRedirect("login.jsp");
+            response.sendRedirect("index.jsp");
         }else{
             response.sendRedirect("error.jsp");
         }

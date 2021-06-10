@@ -110,7 +110,7 @@
 			<div class="row" style="text-align: center;">
 				<div class="col-lg-4 col-md-4 col-sm-2">
 					<img src="img/tiananmen.png" width="310px" height="200px"/>
-					<a>
+					<a href="#">
 						<p>&nbsp;&nbsp;
 							北京15日14晚跟团游〖菜狗专享 · 悠悠小钱〗
 						</p>
@@ -258,7 +258,7 @@
 </body>
 
 <!-- 先引入jQuery核心js文件 -->
-<script src="js/jquery-1.11.0.min.js"></script>
+<script src="js/jquery-1.11.3.min.js"></script>
 <!-- 引入BootStrap核心js文件 -->
 <script src="js/bootstrap.min.js"></script>
 </html>

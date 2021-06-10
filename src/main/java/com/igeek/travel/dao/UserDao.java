@@ -25,14 +25,14 @@ public class UserDao extends BasicDao<User> implements IDao<User> {
 
     @Override
     public Object selectValue(Object... params) throws SQLException {
-        String sql = "select count(*) from user where username =?";
+        String sql = "select count(*) from tab_user where username =?";
         Long value = (Long) this.getSingleValue(DataSourceUtils.getConnection(), sql, params);
         return value;
     }
 
     @Override
     public int update(Object... params) throws SQLException {
-        String sql = "update user set state = 1 where code = ?";
+        String sql = "update tab_user set state = 1 where code = ?";
         int i = this.updateInfo(DataSourceUtils.getConnection(), sql, params);
         return i;
     }
@@ -45,7 +45,7 @@ public class UserDao extends BasicDao<User> implements IDao<User> {
     //插入
     @Override
     public int insert(User user) throws SQLException {
-        String sql = "insert into user values(?,?,?,?,?,?,?,?,0,?)";
+        String sql = "insert into tab_user values(?,?,?,?,?,?,?,?,0,?)";
         int i = this.updateInfo(DataSourceUtils.getConnection(), sql,
                 user.getUid(), user.getUsername(), user.getPassword(),
                 user.getName(), user.getBirthday(), user.getSex(),
