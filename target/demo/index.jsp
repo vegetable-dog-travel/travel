@@ -168,7 +168,7 @@
 <!-- 广告条  -->
 <div class="container">
 	<div class="row">
-		<img src="img/广告.jpg" width="100%"/>
+		<img src="img/广告.png" width="100%"/>
 	</div>
 </div>
 

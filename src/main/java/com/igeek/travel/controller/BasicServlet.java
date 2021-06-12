@@ -27,7 +27,7 @@ public class BasicServlet extends HttpServlet {
 
         try {
             //获得方法对象，忽略访问权限修饰符
-            Method method = clazz.getDeclaredMethod(methodName,HttpServletRequest.class,HttpServletResponse.class);
+            Method method = clazz.getDeclaredMethod(methodName, HttpServletRequest.class, HttpServletResponse.class);
 
             //执行目标方法
             method.invoke(this, request, response);

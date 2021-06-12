@@ -3,11 +3,13 @@ package com.igeek.travel.dao;
 import org.apache.commons.dbutils.QueryRunner;
 import org.apache.commons.dbutils.handlers.BeanHandler;
 import org.apache.commons.dbutils.handlers.BeanListHandler;
+import org.apache.commons.dbutils.handlers.MapListHandler;
 import org.apache.commons.dbutils.handlers.ScalarHandler;
 
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.List;
+import java.util.Map;
 
 /**
  * 通过DBUtils定义了一套CRUD具体实现模板
@@ -39,5 +41,11 @@ public class BasicDao<T> {
     public int updateInfo(Connection conn,String sql,Object...params) throws SQLException {
         int i = runner.update(conn, sql, params);
         return i;
+    }
+
+    //查询   Map<表中字段的名称, 表中字段对应的值>
+    public List<Map<String, Object>> getMapList(Connection conn,String sql,Object...params) throws SQLException {
+        List<Map<String, Object>> list = runner.query(conn, sql, new MapListHandler(), params);
+        return list;
     }
 }
