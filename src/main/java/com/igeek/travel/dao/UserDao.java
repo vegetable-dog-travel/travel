@@ -13,10 +13,13 @@ import java.util.List;
  * @Date 2021/6/5 14:05
  */
 public class UserDao extends BasicDao<User> implements IDao<User> {
+
+
+    //通过用户名和密码查询用户信息
     @Override
     public User selectOne(Object... params) throws SQLException {
-        String sql = "select * from user where username = ? and password=?";
-        User user = this.getBean(DataSourceUtils.getConnection(),sql,User.class,params);
+        String sql="select * from tab_user where username=?and password=?";
+        User user = this.getBean(DataSourceUtils.getConnection(), sql, User.class, params);
         return user;
     }
 

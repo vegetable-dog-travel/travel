@@ -4,7 +4,7 @@
 		<property name="user">root</property>
 		<property name="password">root</property>
 		<property name="driverClass">com.mysql.jdbc.Driver</property>
-		<property name="jdbcUrl">jdbc:mysql://localhost:3306/travel?useUnicode=true&amp;characterEncoding=utf-8</property>
+		<property name="jdbcUrl">jdbc:mysql://192.168.22.22:3306/travel?useUnicode=true&amp;characterEncoding=utf-8</property>
 		<!--当池中的连接不够时，一次创建多少个连接-->
 		<property name="acquireIncrement">5</property>
 		<!--初始时池中的连接-->
